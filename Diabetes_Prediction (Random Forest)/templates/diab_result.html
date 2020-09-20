@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Diabetes_Predictor</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='diab_result_styles.css') }}"> 
+	</head>
+
+    <body>
+		<div id="container4">
+			<div id='header4'>
+    			<h1>Diabetes Predictor Application</h1>
+    		</div>    	
+			<div id="ml-container4">
+				<p>Prediction for the entered data:</p>
+				{% if prediction == 1%}
+				<h2 style="color:red;">Sorry! You have DIABETES</h2>
+				{% elif prediction == 0%}
+				<h2 style="color:blue;">Hurray! You don't have DIABETES </h2>
+				{% endif %}
+			</div>
+		</div>
+			
+			<div id='footer4'>
+				Copyright &copy; 2020 Rajaramm.P
+			</div>
+
+	</body>
+</html>

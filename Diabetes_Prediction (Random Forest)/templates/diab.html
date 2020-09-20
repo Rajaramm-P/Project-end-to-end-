@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Diabetes_Predictor</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='diab_styles.css') }}"> 
+    </head>
+
+    <body>
+    	<div id="container3">
+            <div id='header3'>
+    			<h1>Diabetes Predictor Application</h1>
+    		</div>
+			<div id="ml-container3">
+    		<form action="{{ url_for('result') }}" method="POST">
+                <input class="form-input" type="text" name="pregnancies" placeholder="No. of Pregnancies eg. 0"><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose eg. 80"><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure eg. 80"><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness eg. 20"><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level eg. 80"><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index eg. 23.1"><br>
+                <input class="form-input" type="text" name="age" placeholder="Age eg. 34"><br>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+			</div>
+		</div>
+			
+			<div id='footer3'>
+				Copyright &copy; 2020 Rajaramm.P
+			</div>
+
+    </body>
+</html>
